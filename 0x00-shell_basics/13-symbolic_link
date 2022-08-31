@@ -1,2 +1,4 @@
 #!/bin/bash
 ln -s /bin/ls __ls__
+#!/bin/bash
+ln -s /lx-system_engineering-devops/0x00-shell_basics __ls__ /bin/ls 
