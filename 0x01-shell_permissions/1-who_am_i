@@ -1,1 +1,2 @@
-#!/bin/bash\nid -un
+#!/bin/bash
+id -un
