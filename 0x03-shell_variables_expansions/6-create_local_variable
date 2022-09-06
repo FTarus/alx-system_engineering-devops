@@ -1,5 +1,2 @@
 #!/bin/bash
-export BEST="School">>6-create_local_variable
-echo export BEST=School>>6-create_local_variable
-echo export BEST=School
 export BEST="School"
