@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# comments go here!
-# trap: receive signal
-echo $$ >> /var/run/holbertonscript.pid
+# create pub file with its own pid and receive SIG
+sudo bash -c "echo $$ > /var/run/codingschoolscript.pid"
+trap "sudo rm -f /var/run/codingschoolscript.pid; exit" SIGQUIT
+trap "sudo rm -f /var/run/codingschoolscript.pid; echo I hate the kill command; exit" SIGTERM
 trap "echo Y U no love me?!" SIGINT
-trap "echo I hate the kill command && rm -rf /var/run/holbertonscript.pid; exit" SIGTERM SIGQUIT
 while :
 do
-	echo "To infinity and beyond"
-	sleep 2
+    echo "To infinity and beyond"
+    sleep 2
 done
